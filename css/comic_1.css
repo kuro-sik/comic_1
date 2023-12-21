@@ -1,0 +1,224 @@
+.comic-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(255, 255, 255);
+    font-family: 'Shantell Sans', sans-serif;
+}
+
+.comic__item {
+    width: 100%;
+    height: 380px;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.comic__item__twice__1 {
+    width: 60%;
+    height: 380px;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+}
+.comic__item__twice__2 {
+    width: 40%;
+    height: 380px;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.comic__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cloud-img {
+    width: 100%;
+}
+
+/*____________________________ первая картинка_________________________________ */
+.comic__item1 .cloud1 {
+    position: absolute;
+    width: 250px;
+    top: -40px;
+    left: 0;
+}
+.comic__item1 .cloud-img1 {
+    transform: scaleX(-1);
+}
+.comic__item1 .cloud2 {
+    position: absolute;
+    width: 250px;
+    left: 5%;
+    bottom: 10px;
+
+}
+.comic__item1 .cloud-img2 {
+    transform: rotate(180deg);
+}
+.comic__item1 .text1 {
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    font-size: 18px;
+
+}
+.comic__item1 .text2 {
+    position: absolute;
+    left: 65px;
+    bottom: 120px;
+    font-size: 18px;
+
+}
+
+/*__________________________анимка первой картинки_____________________________*/
+@media(max-width:600px) {
+    .comic__item1 .cloud1 {
+        width: 200px;
+        top: 600px;
+        left: 0;
+
+    }
+
+    .comic__item1 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+    .comic__item1 .cloud2 {
+        position: absolute;
+        width: 200px;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    .comic__item1 .cloud-img2 {
+        transform: rotate(180deg);
+    }
+}
+
+/*____________________________ вторая картинка_________________________________ */
+.comic__item2 .cloud3 {
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 50%;
+}
+
+.comic__item2 .cloud-img1 {
+    transform: scaleX(-1);
+}
+
+.comic__item2 .text3 {
+    position: absolute;
+    top: 50px;
+    right: 42%;
+    font-size: 18px;
+
+}
+
+/*__________________________анимка второй картинки_____________________________*/
+@media(max-width:600px) {
+    .comic__item2 .cloud3 {
+        width: 200px;
+        top: 100px;
+        left: 0;
+
+    }
+
+    .comic__item2 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    }
+}
+
+
+/*____________________________ третья картинка_________________________________ */
+.comic__item3 .cloud4 {
+    position: absolute;
+    width: 150px;
+    left: 20%;
+    bottom: 200px;
+}
+.comic__item3 .text4 {
+    position: absolute;
+    left: 35%;
+    bottom: 70px;
+    font-size: 18px;
+
+}
+.comic__item3 .cloud5 {
+    position: absolute;
+    width: 200px;
+    left: 34%;
+    bottom: 190px;
+
+}
+.comic__item3 .text5 {
+    position: absolute;
+    left: 52px;
+    bottom: 80px;
+    font-size: 18px;
+
+}
+
+/*__________________________анимка третьей картинки_____________________________*/
+@media(max-width:300px) {
+    .comic__item3 .cloud4 {
+        position: absolute;
+        width: 100px;
+        top: 200px;
+        left: 2%;
+
+    }
+
+    .comic__item3 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+    .comic__item3 .cloud5 {
+        position: absolute;
+        width: 100px;
+        left: 32%;
+        bottom: 50px;
+    }
+}
+
+
+/*____________________________ пятая картинка_________________________________ */
+.comic__item5 .cloud6 {
+    position: absolute;
+    width: 150px;
+    left: 25%;
+    bottom: 120px;
+
+}
+.comic__item5 .cloud-img1 {
+    transform: rotate(180deg);
+}
+.comic__item5 .text6 {
+    position: absolute;
+    left: 25%;
+    bottom: 65px;
+    font-size: 18px;
+}
+
+/*__________________________анимка пятой картинки_____________________________*/
+@media(max-width:600px) {
+    .comic__item5 .cloud6 {
+        width: 200px;
+        top: 100px;
+        left: 0;
+
+    }
+
+    .comic__item5 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    }
+}
+/* _______________________________Основная анимка________________________________ */
+@media(max-width:900px) {
+    .comic__item {
+        width: 100%;
+    }
+    .comic__item__twice__1{
+        width: 100%;
+    }
+}
